@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a0deb09-fc42-402c-a6e9-2859d0d526ca" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ATAPartial_Callback.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Callback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="17" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATA.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/ATA.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+              <folding>
+                <element signature="e#43#101#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParamToValueInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParamToValue/ParamToValueInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParamToValue_ObjectsMatchType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParamToValue/ParamToValue_ObjectsMatchType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="86" column="3" lean-forward="false" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoryToAdapter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Discovery/FactoryToAdapter/FactoryToAdapter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="28" selection-start-column="77" selection-end-line="31" selection-end-column="16" />
+              <folding>
+                <element signature="e#66#109#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATA_SmartChain.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ATA/ATA_SmartChain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATAInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/ATAInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassFilesIAInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../class-discovery/src/ClassFilesIA/ClassFilesIAInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATAPartial_SmartChain.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_SmartChain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              <folding>
+                <element signature="e#51#92#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATAPartial_CallbackNoHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackNoHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-990">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATAPartialInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartialInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="16" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATAPartial_Chain.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Chain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225">
+              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <folding>
+                <element signature="e#51#92#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exception_ATABuilder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Exception/Exception_ATABuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterDiscovery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#49#123#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterDiscovery_X.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery_X.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NamespaceDirectory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../class-discovery/src/NamespaceDirectory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="45" column="2" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NsDirUtil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../class-discovery/src/NsDirUtil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassFilesIA_NamespaceDirectoryPsr4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../class-discovery/src/ClassFilesIA/ClassFilesIA_NamespaceDirectoryPsr4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+              <folding>
+                <element signature="e#58#107#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoryToAdapterInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Discovery/FactoryToAdapter/FactoryToAdapterInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterDiscovery_Visitor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery_Visitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Donquixote\Cf\SchemaToAnything</find>
+      <find>SchemaToAnythingPartial</find>
+      <find>chema</find>
+      <find>scandir</find>
+      <find>\Reflect</find>
+      <find>@Adapter</find>
+      <find>getParam</find>
+      <find>use Donquixote\Annotation\</find>
+      <find>preg.*return</find>
+      <find>Cf\Discovery</find>
+      <find>Cf\ATA</find>
+      <find>Donquixote\Cf</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Donquixote\Adaptism\ATA</replace>
+      <replace>AnythingToAnythingPartial</replace>
+      <replace>ClassDiscovery</replace>
+      <replace>Adaptism\ATA</replace>
+      <replace>Donquixote\Adaptism</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/vendor/donquixote/annotation-parser</dir>
+      <dir>$PROJECT_DIR$/vendor/donquixote/annotation-parser/src</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/..</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ArgsMapper/ArgsMapperInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsBuilder/ArgsMapperInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsBuilder/ArgsMapInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMapInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_Classes.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackBase2.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackBase.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_ClassesSeedNeutral.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_Simple.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_MoreArgs.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_SimpleWithATA.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Callback1.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/Arg/ArgFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/Arg/AtaToArgInterface.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_FreeArgs.php" />
+        <option value="$PROJECT_DIR$/src/ArgsMap/ArgsMap_X.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/ClassFileToAdapters/ClassFileToAdapters.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Callback.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_ClassInstance.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_StaticMethod.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackBase1.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartialBase.php" />
+        <option value="$PROJECT_DIR$/tests/src/AdapterTest.php" />
+        <option value="$PROJECT_DIR$/tests/src/DiscoveryTest.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/FactoryVisitor.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Visitor/Factory/FactoryVisitor.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Visitor/Factory/FactoryVisitorInterface.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Discovery/FactoryDiscovery.php" />
+        <option value="$PROJECT_DIR$/../factory-discovery/src/Visitor/Factory/FactoryVisitor.php" />
+        <option value="$PROJECT_DIR$/../factory-discovery/src/Visitor/Factory/FactoryVisitorInterface.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/FactoryVisitor/FactoryVisitor_CollectAdapters.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/AdapterDiscoveryInterface.php" />
+        <option value="$PROJECT_DIR$/../factory-discovery/src/Discovery/FactoryDiscoveryInterface.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/ClassFileToFactories/ClassFileToFactories.php" />
+        <option value="$PROJECT_DIR$/../factory-discovery/src/Discovery/FactoryDiscovery.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/AdapterDiscovery_Visitor.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactory_Function.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactory_ClassConstruction.php" />
+        <option value="$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/../class-discovery/src/NsDirUtil.php" />
+        <option value="$PROJECT_DIR$/../class-discovery/src/NamespaceDirectory.php" />
+        <option value="$PROJECT_DIR$/../class-discovery/src/ClassFilesIA/ClassFilesIA_NamespaceDirectoryPsr4.php" />
+        <option value="$PROJECT_DIR$/src/Exception/Exception_ATABuilder.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_SmartChain.php" />
+        <option value="$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Chain.php" />
+        <option value="$PROJECT_DIR$/src/ATA/ATA.php" />
+        <option value="$PROJECT_DIR$/src/ParamToValue/ParamToValue_ObjectsMatchType.php" />
+        <option value="$PROJECT_DIR$/src/ParamToValue/ParamToValueInterface.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/FactoryToAdapter/FactoryToAdapter.php" />
+        <option value="$PROJECT_DIR$/src/Discovery/AdapterDiscovery_X.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP Interpreter">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/donquixote/annotation-parser" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/donquixote/callback-reflection" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/satooshi/php-coveralls" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/instaclick/object-calisthenics-sniffs" />
+      <path value="$PROJECT_DIR$/vendor/instaclick/symfony2-coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/instaclick/coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/donquixote/class-discovery" />
+      <path value="$PROJECT_DIR$/vendor/donquixote/factory-reflection" />
+      <path value="$PROJECT_DIR$/vendor/donquixote/reflectionkit" />
+      <path value="$PROJECT_DIR$/vendor/donquixote/factory-discovery" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1919" />
+    <option name="y" value="30" />
+    <option name="width" value="1402" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code StylePhp Inspections (EA Extended)PHP</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>PHPDocPHP</id>
+          </State>
+          <State>
+            <id>Php Inspections (EA Extended)PHP</id>
+          </State>
+          <State>
+            <id>PhpUnitPhp Inspections (EA Extended)PHP</id>
+          </State>
+          <State>
+            <id>Probable bugsPhp Inspections (EA Extended)PHP</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpDocRedundantThrowsInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ATA" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ATA" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Partial" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ClassFileToAdapters" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FactoryToAdapter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FactoryVisitor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="adaptism" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Exception" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="annotation-parser" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="annotation-parser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="annotation-parser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resolver" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="class-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="class-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="class-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ClassFilesIA" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="class-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ClassFileToFactories" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ClassToFactories" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Discovery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Factory" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FunctionToReturnType" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Util" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Visitor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="factory-reflection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Visitor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Factory" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="reflectionkit" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="reflectionkit" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="reflectionkit" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Context" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adaptism" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="reflectionkit" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ContextFinder" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adaptism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../factory-discovery" />
+    <property name="SearchEverywhereHistoryKey" value="ParamToValueInterface&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/src/ParamToValue/ParamToValueInterface.php&#10;ParamTovalue&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/src/ParamToValue/ParamToValueInterface.php&#10;FactoryDiscovery&#9;null&#9;null&#10;ATAPartial_CallbackBase1&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/src/ATA/Partial/ATAPartial_CallbackBase1.php&#10;functionGetReturnType&#9;null&#9;null&#10;CallbackReflection_ClassConstruction&#9;null&#9;null&#10;CallbackReflectionInterface&#9;FILE&#9;file:///home/lemonhead/projects/phplib/callback-reflection/src/Callback/CallbackReflectionInterface.php&#10;ContextFinderInterface&#9;null&#9;null&#10;composer.json&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/composer.json&#10;Donquixote\FactoryReflection\Factory\ReflectionFactory_Function&#9;null&#9;null&#10;ReflectionType&#9;null&#9;null&#10;ReflectionFactory&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/vendor/donquixote/annotation-parser/src/ReflectionFactory/ReflectionFactory_Function.php&#10;AdapterTest&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/tests/src/AdapterTest.php&#10;eflectorGetContext&#9;null&#9;null&#10;/home/lemonhead/projects/phplib/adaptism/src/ATA/Partial/AnythingToAnythingPartial_StaticMethod.php&#9;FILE&#9;file:///home/lemonhead/projects/phplib/adaptism/src/ATA/Partial/AnythingToAnythingPartial_StaticMethod.php&#10;ArrayAccess&#9;null&#9;null" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../reflectionkit/src/ContextFinder" />
+      <recent name="$PROJECT_DIR$/../reflectionkit/src/Context" />
+      <recent name="$PROJECT_DIR$/../factory-reflection/src/ClassToFactories" />
+      <recent name="$PROJECT_DIR$/../factory-reflection/src/ClassFileToFactories" />
+      <recent name="$PROJECT_DIR$/../factory-reflection/src/Factory" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../class-discovery/src" />
+      <recent name="$PROJECT_DIR$/src/Discovery" />
+      <recent name="$PROJECT_DIR$/src/ArgsMap" />
+      <recent name="$PROJECT_DIR$/src/ParamToValue" />
+      <recent name="$PROJECT_DIR$/src/ATA/Partial" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.AdapterTest.php">
+    <configuration name="AdapterTest.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/adaptism/AdapterTest.php" />
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.AdapterTest.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.tests" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.AdapterTest.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a0deb09-fc42-402c-a6e9-2859d0d526ca" name="Default" comment="" />
+      <created>1506733469819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506733469819</updated>
+      <workItem from="1506733471112" duration="789000" />
+      <workItem from="1506789806343" duration="637000" />
+      <workItem from="1508145691337" duration="9448000" />
+      <workItem from="1509561026050" duration="3281000" />
+      <workItem from="1512185819564" duration="1260000" />
+      <workItem from="1512187107801" duration="6731000" />
+      <workItem from="1512255621954" duration="18263000" />
+      <workItem from="1512316763118" duration="721000" />
+      <workItem from="1512317793897" duration="26617000" />
+      <workItem from="1512414459404" duration="9984000" />
+      <workItem from="1512441704340" duration="15502000" />
+      <workItem from="1512495162081" duration="603000" />
+      <workItem from="1512497355160" duration="13684000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="tests - 2017.12.05 at 02h 00m 04s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2017.12.05 at 02h 00m 23s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2017.12.05 at 02h 00m 38s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2017.12.05 at 02h 01m 36s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2017.12.05 at 02h 01m 38s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="107520000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1919" y="30" width="1402" height="1050" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3928831" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.501845" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.49815497" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="25" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ArgsMap/ArgsMap_MoreArgs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArgsMap/ArgsMap_ClassesSeedNeutral.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <element signature="e#47#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArgsMap/ArgsMap_FreeArgs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArgsMap/ArgsMap_X.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="57" lean-forward="false" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/FunctionToReturnType/FunctionToReturnType_PhpDoc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_StaticMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartialBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="19" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackBase1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_ClassInstance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/src/DiscoveryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/src/AdapterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="133" column="27" lean-forward="false" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+          <folding>
+            <element signature="e#45#92#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/src/Fixtures/Countable/Countable_Traversable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Reflection/Reflection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="891" column="18" lean-forward="false" selection-start-line="891" selection-start-column="18" selection-end-line="891" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Service/Command/Factory/FactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Visitor/Factory/FactoryVisitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Visitor/Factory/FactoryVisitorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Discovery/FactoryDiscovery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="97" lean-forward="false" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
+          <folding>
+            <element signature="e#58#123#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/ClassToFactories/ClassToFactories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-discovery/src/Visitor/Factory/FactoryVisitorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-discovery/src/Visitor/Factory/FactoryVisitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/FactoryVisitor/FactoryVisitor_CollectAdapters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#64#141#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscoveryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-discovery/src/Discovery/FactoryDiscoveryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/ClassFileToAdapters/ClassFileToAdapters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="e#69#137#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/ClassFileToFactories/ClassFileToFactories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#69#136#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-discovery/src/Discovery/FactoryDiscovery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery_Visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/FactoryToAdapter/FactoryToAdapterInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactory_ClassConstruction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/Factory/ReflectionFactory_Function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../factory-reflection/src/ClassFileToFactories/ClassFileToFactoriesInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-discovery/src/NsDirUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-discovery/src/NamespaceDirectory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="45" column="2" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-discovery/src/ClassFilesIA/ClassFilesIA_NamespaceDirectoryPsr4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding>
+            <element signature="e#58#107#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../class-discovery/src/ClassFilesIA/ClassFilesIAInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception/Exception_ATABuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartialInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="16" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_CallbackNoHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-990">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Callback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="17" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/ATAInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_SmartChain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#51#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/Partial/ATAPartial_Chain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#51#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/ATA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#43#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParamToValue/ParamToValue_ObjectsMatchType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="86" column="3" lean-forward="false" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParamToValue/ParamToValueInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#49#123#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/AdapterDiscovery_X.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Discovery/FactoryToAdapter/FactoryToAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="28" selection-start-column="77" selection-end-line="31" selection-end-column="16" />
+          <folding>
+            <element signature="e#66#109#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATA/ATA_SmartChain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
