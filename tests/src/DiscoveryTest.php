@@ -12,8 +12,9 @@ use Donquixote\Adaptism\Tests\Fixtures\Color\Hex\HexColor;
 use Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColorInterface;
 use Donquixote\Adaptism\Tests\Fixtures\Countable\Countable_Traversable;
 use Donquixote\Adaptism\Tests\Fixtures\FixturesUtil;
+use PHPUnit\Framework\TestCase;
 
-class DiscoveryTest extends \PHPUnit_Framework_TestCase {
+class DiscoveryTest extends TestCase {
 
   public function testSimplePartialsList() {
 

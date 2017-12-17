@@ -19,8 +19,9 @@ use Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColor;
 use Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColorInterface;
 use Donquixote\Adaptism\Tests\Fixtures\Countable\Countable_Traversable;
 use Donquixote\Adaptism\Tests\Fixtures\FixturesUtil;
+use PHPUnit\Framework\TestCase;
 
-class AdapterTest extends \PHPUnit_Framework_TestCase {
+class AdapterTest extends TestCase {
 
   public function testSimpleATA() {
 
