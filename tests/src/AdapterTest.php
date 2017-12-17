@@ -26,14 +26,14 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     $partial = new ATAPartial_Seed_Neutral_Object((object)['x' => 'y']);
 
-    $this->assertSame(
+    static::assertSame(
       \stdClass::class,
       $partial->getResultType());
 
-    $this->assertTrue(
+    static::assertTrue(
       $partial->acceptsSourceClass(Seed_Neutral::class));
 
-    $this->assertTrue(
+    static::assertTrue(
       $partial->providesResultType(\stdClass::class));
 
     $ata = ATABuilder::create()
@@ -42,14 +42,14 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     $seed = new Seed_Neutral();
 
-    $this->assertEquals(
+    static::assertEquals(
       ['x' => 'y'],
       (array)$partial->adapt(
         $seed,
         \stdClass::class,
         $ata));
 
-    $this->assertEquals(
+    static::assertEquals(
       ['x' => 'y'],
       (array)$ata->adapt(
         $seed,
@@ -67,7 +67,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
           ]))
       ->buildPartialsList();
 
-    $this->assertSame(
+    static::assertSame(
       ['object' => 'object'],
       $list->getTypes());
 
@@ -75,19 +75,19 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     $seed = new Seed_Neutral();
 
-    $this->assertSame('object', $partial->getResultType());
+    static::assertSame('object', $partial->getResultType());
 
-    $this->assertTrue(
+    static::assertTrue(
       $partial->providesResultType(\Reflector::class));
 
-    $this->assertTrue(
+    static::assertTrue(
       $partial->acceptsSourceClass(Seed_Neutral::class));
 
     $result = $partial->adapt($seed, \Reflector::class,$ata);
 
     if (!$result instanceof \ReflectionClass) {
       $resulttype = \gettype($result);
-      $this->fail("Instance of ReflectionClass expected, $resulttype found instead.");
+      static::fail("Instance of ReflectionClass expected, $resulttype found instead.");
       return;
     }
 
@@ -97,7 +97,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     if (!$result instanceof \ReflectionClass) {
       $resulttype = \gettype($result);
-      $this->fail("Instance of ReflectionClass expected, $resulttype found instead.");
+      static::fail("Instance of ReflectionClass expected, $resulttype found instead.");
       return;
     }
   }
@@ -114,7 +114,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
       });
 
     if (!$traversable instanceof \Traversable) {
-      $this->fail("Failed to create a traversable.");
+      static::fail("Failed to create a traversable.");
       return;
     }
 
@@ -122,15 +122,15 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     if (!$countable instanceof \Countable) {
       if (null === $countable) {
-        $this->fail("Failed to adapt as Countable.");
+        static::fail("Failed to adapt as Countable.");
       }
       else {
-        $this->fail("Unexpected return value from ATA.");
+        static::fail("Unexpected return value from ATA.");
       }
       return;
     }
 
-    $this->assertSame(3, $countable->count());
+    static::assertSame(3, $countable->count());
   }
 
   public function testRgbToHex() {
@@ -147,10 +147,10 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
     foreach ($colors as $hexCode => $rgb) {
       $hex = $ata->adapt($rgb, HexColorInterface::class);
       if (!$hex instanceof HexColorInterface) {
-        $this->fail("Misbehaving adapter: Must return a hex color, but did not.");
+        static::fail("Misbehaving adapter: Must return a hex color, but did not.");
         return;
       }
-      $this->assertSame((string)$hexCode, $hex->getHexCode());
+      static::assertSame((string)$hexCode, $hex->getHexCode());
     }
   }
 
@@ -165,7 +165,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     $seed = new Seed_Neutral();
 
-    $this->assertEquals(
+    static::assertEquals(
       ['x' => 'y'],
       (array)$ata->adapt(
         $seed,
@@ -177,11 +177,11 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
 
     if (!$result instanceof \ReflectionClass) {
       $resulttype = \gettype($result);
-      $this->fail("Instance of ReflectionClass expected, $resulttype found instead.");
+      static::fail("Instance of ReflectionClass expected, $resulttype found instead.");
       return;
     }
 
-    $this->assertSame(
+    static::assertSame(
       self::class,
       $result->getName());
 
@@ -190,11 +190,11 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
       \ReflectionFunction::class);
 
     if (!$result instanceof \ReflectionFunction) {
-      $this->fail("Instance of ReflectionFunction expected.");
+      static::fail("Instance of ReflectionFunction expected.");
       return;
     }
 
-    $this->assertSame(
+    static::assertSame(
       'strtolower',
       $result->getName());
   }

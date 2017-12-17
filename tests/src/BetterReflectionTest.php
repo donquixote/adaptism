@@ -21,7 +21,7 @@ class BetterReflectionTest extends TestCase {
 
     $context = $contextFinder->__invoke($namespaceNode);
 
-    $this->assertSame(
+    static::assertSame(
       [
         'Adapter' => Adapter::class
       ],
@@ -30,10 +30,10 @@ class BetterReflectionTest extends TestCase {
     $typeResolver = new TypeResolver();
 
     if (null === $type = $typeResolver->resolve('Adapter', $context)) {
-      $this->fail("Type resolver returned null.");
+      static::fail("Type resolver returned null.");
     }
 
-    $this->assertSame('\\' . Adapter::class, $type->__toString());
+    static::assertSame('\\' . Adapter::class, $type->__toString());
   }
 
 }
