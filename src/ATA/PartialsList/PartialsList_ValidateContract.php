@@ -30,6 +30,7 @@ class PartialsList_ValidateContract implements PartialsListInterface {
         continue;
       }
       $type_export = var_export($type, true);
+      /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
       throw new \RuntimeException("Illegal type $type_export found.");
     }
     return $types;

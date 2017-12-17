@@ -33,6 +33,7 @@ class DefinitionToATAUtil {
       throw new Exception_ATABuilder("Class '$class' found in definition does not exist.");
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     $reflClass = new \ReflectionClass($class);
 
     if ($requireInstantiable && !$reflClass->isInstantiable()) {
@@ -86,6 +87,7 @@ class DefinitionToATAUtil {
       throw new Exception_ATABuilder("Method '$class::$methodName()' specified in definition does not exist.");
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     $reflMethod = new \ReflectionMethod($class, $methodName);
 
     $modifiers = $reflMethod->getModifiers();

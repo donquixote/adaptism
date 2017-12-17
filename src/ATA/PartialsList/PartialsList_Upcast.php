@@ -81,6 +81,7 @@ class PartialsList_Upcast implements PartialsListInterface {
         continue;
       }
 
+      /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
       $reflClass = new \ReflectionClass($class);
 
       foreach ($reflClass->getInterfaceNames() as $interface) {

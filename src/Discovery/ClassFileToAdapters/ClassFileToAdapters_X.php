@@ -66,6 +66,7 @@ class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
       return [];
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     $reflClass = new \ReflectionClass($class);
 
     if ($fileRealpath !== $reflClass->getFileName()) {

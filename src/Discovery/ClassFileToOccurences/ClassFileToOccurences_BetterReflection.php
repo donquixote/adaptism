@@ -114,6 +114,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
       return null;
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     $constructor = $reflClass->getConstructor();
 
     if ($reflClass->implementsInterface(ATAPartialInterface::class)) {
@@ -126,6 +127,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
       return null;
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     if (null === $parameter->getClass()) {
       return null;
     }
@@ -194,6 +196,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
       return null;
     }
 
+    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     if (null === $parameter->getClass()) {
       return null;
     }
