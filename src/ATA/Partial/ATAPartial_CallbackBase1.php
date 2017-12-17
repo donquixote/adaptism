@@ -41,7 +41,7 @@ abstract class ATAPartial_CallbackBase1 extends ATAPartialBase {
     $original,
     $interface,
     ATAInterface $ata
-  ) {
+  ): ?object {
     $args = $this->argsMap->buildArgs($original, $ata);
 
     // Other arguments, e.g. services, might already be part of the callback.

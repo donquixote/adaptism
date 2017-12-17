@@ -16,7 +16,7 @@ class ReflectionUtil {
    *
    * @return mixed[]|null
    */
-  public static function paramsGetValues(array $params, ParamToValueInterface $paramToValue) {
+  public static function paramsGetValues(array $params, ParamToValueInterface $paramToValue): ?array {
 
     $else = new \stdClass();
 

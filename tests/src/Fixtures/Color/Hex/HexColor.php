@@ -20,7 +20,7 @@ class HexColor implements HexColorInterface {
    *
    * @return self
    */
-  public static function fromRgb(RgbColorInterface $rgbColor) {
+  public static function fromRgb(RgbColorInterface $rgbColor): self {
     return new self(
       sprintf(
         '%02x%02x%02x',
@@ -38,7 +38,7 @@ class HexColor implements HexColorInterface {
    * @return string
    *   The 6-char hex representation. Without any leading "#".
    */
-  public function getHexCode() {
+  public function getHexCode(): string {
     return $this->hexCode;
   }
 }

@@ -32,9 +32,9 @@ class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
   /**
    * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
    *
-   * @return \Donquixote\Adaptism\Discovery\ClassFileToAdapters\ClassFileToAdaptersInterface
+   * @return self
    */
-  public static function create(ParamToValueInterface $paramToValue) {
+  public static function create(ParamToValueInterface $paramToValue): self {
     return new self(
       new ClassFileToFactories(
         ClassToFactories::create(),
@@ -60,7 +60,7 @@ class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function classFileGetPartials($class, $fileRealpath) {
+  public function classFileGetPartials(string $class, string $fileRealpath): array {
 
     if (!class_exists($class)) {
       return [];

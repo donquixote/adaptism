@@ -22,7 +22,7 @@ class Seed_ClassName implements Seed_ClassNameInterface {
    *
    * @return string
    */
-  public function getClassName() {
+  public function getClassName(): string {
     return $this->class;
   }
 }

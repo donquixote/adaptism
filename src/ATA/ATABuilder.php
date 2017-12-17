@@ -61,7 +61,7 @@ class ATABuilder {
   /**
    * @return self
    */
-  public static function create() {
+  public static function create(): self {
     return new self(
       ClassFileToOccurences_BetterReflection::create());
   }
@@ -201,6 +201,11 @@ class ATABuilder {
     return $lists;
   }
 
+  /**
+   * @param \Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface $list
+   *
+   * @return \Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface
+   */
   private function listAddValidatorIfEnabled(PartialsListInterface $list): PartialsListInterface {
 
     return $this->validate

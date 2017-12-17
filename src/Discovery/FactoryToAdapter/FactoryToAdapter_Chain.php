@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
+use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
 
 class FactoryToAdapter_Chain implements FactoryToAdapterInterface {
@@ -24,7 +25,7 @@ class FactoryToAdapter_Chain implements FactoryToAdapterInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory) {
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface {
 
     foreach ($this->chained as $fta) {
       if (null !== $partial = $fta->factoryGetPartial($factory)) {

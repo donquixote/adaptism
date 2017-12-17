@@ -13,6 +13,6 @@ interface ATAInterface {
    *   An instance of $destinationInterface, or
    *   NULL, if adaption is not supported for the given types.
    */
-  public function adapt($original, $destinationInterface);
+  public function adapt(object $original, string $destinationInterface): ?object;
 
 }

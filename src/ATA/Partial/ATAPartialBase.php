@@ -33,7 +33,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    *
    * @return static
    */
-  public function withSourceType($sourceType) {
+  public function withSourceType($sourceType): self {
 
     if ($sourceType === $this->sourceType) {
       return $this;
@@ -49,7 +49,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    *
    * @return static
    */
-  public function withResultType($resultType) {
+  public function withResultType($resultType): self {
 
     if ($resultType === $this->resultType) {
       return $this;
@@ -64,9 +64,9 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    * @param string $sourceType
    * @param string $resultType
    *
-   * @return $this|\Donquixote\Adaptism\ATA\Partial\ATAPartialBase
+   * @return static
    */
-  public function withTypes($sourceType, $resultType) {
+  public function withTypes($sourceType, $resultType): self {
 
     if ($sourceType === $this->sourceType && $resultType === $this->resultType) {
       return $this;
@@ -91,7 +91,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
     $original,
     $interface,
     ATAInterface $ata
-  ) {
+  ): ?object {
 
     if (NULL !== $this->sourceType && !$original instanceof $this->sourceType) {
       return NULL;
@@ -117,25 +117,28 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    * @param string $interface
    * @param \Donquixote\Adaptism\ATA\ATAInterface $ata
    *
-   * @return mixed
+   * @return null|object
    *
    * @throws \Donquixote\Adaptism\Exception\Exception_MisbehavingATA
    */
   abstract protected function doAdapt(
     $original,
     $interface,
-    ATAInterface $ata);
+    ATAInterface $ata): ?object;
 
   /**
    * @param string $sourceClass
    *
    * @return bool
    */
-  public function acceptsSourceClass($sourceClass) {
+  public function acceptsSourceClass($sourceClass): bool {
     return NULL === $this->sourceType
       || is_a($sourceClass, $this->sourceType, TRUE);
   }
 
+  /**
+   * @return null|string
+   */
   public function getResultType(): ?string {
     return $this->resultType;
   }
@@ -145,7 +148,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    *
    * @return bool
    */
-  public function providesResultType($resultInterface) {
+  public function providesResultType($resultInterface): bool {
     return NULL === $this->resultType
       || is_a($this->resultType, $resultInterface, TRUE);
   }

@@ -29,7 +29,7 @@ class FactoryVisitor_CollectAdapters implements FactoryVisitorInterface {
   /**
    * @param \Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface $factory
    */
-  public function visitFactory(ReflectionFactoryInterface $factory) {
+  public function visitFactory(ReflectionFactoryInterface $factory): void {
 
     if (null === $partial = $this->factoryToAdapter->factoryGetPartial($factory)) {
       return;
@@ -41,7 +41,7 @@ class FactoryVisitor_CollectAdapters implements FactoryVisitorInterface {
   /**
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function getPartials() {
+  public function getPartials(): array {
     return $this->partials;
   }
 }

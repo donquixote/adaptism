@@ -32,7 +32,7 @@ class ArgsMap_MoreArgs implements ArgsMapInterface {
    *
    * @return mixed[]|null
    */
-  public function buildArgs($original, ATAInterface $ata) {
+  public function buildArgs($original, ATAInterface $ata): ?array {
 
     if (null === $args = $this->decorated->buildArgs($original, $ata)) {
       return null;

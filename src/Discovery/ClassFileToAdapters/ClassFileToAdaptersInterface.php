@@ -11,5 +11,5 @@ interface ClassFileToAdaptersInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function classFileGetPartials($class, $fileRealpath);
+  public function classFileGetPartials(string $class, string $fileRealpath): array;
 }

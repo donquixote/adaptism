@@ -9,6 +9,6 @@ interface HexColorInterface {
    * @return string
    *   The 6-char hex representation. Without any leading "#".
    */
-  public function getHexCode();
+  public function getHexCode(): string;
 
 }

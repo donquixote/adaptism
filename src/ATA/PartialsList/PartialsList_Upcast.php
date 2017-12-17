@@ -61,7 +61,7 @@ class PartialsList_Upcast implements PartialsListInterface {
    * @return string[][]
    *   Format: $[$parentClassOrInterface][] = $childClassOrInterface
    */
-  private function getHierarchyMap() {
+  private function getHierarchyMap(): array {
     return $this->hierarchyMap
       ?? $this->hierarchyMap = $this->buildHierarchyMap();
   }

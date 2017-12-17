@@ -34,7 +34,7 @@ class ArgsMap_ClassesSeedNeutral implements ArgsMapInterface {
    *
    * @return mixed[]|null
    */
-  public function buildArgs($original, ATAInterface $ata) {
+  public function buildArgs($original, ATAInterface $ata): ?array {
 
     if (!$original instanceof $this->sourceClass) {
       return null;

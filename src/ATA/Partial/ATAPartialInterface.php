@@ -34,18 +34,18 @@ interface ATAPartialInterface {
    *
    * @return bool
    */
-  public function providesResultType($destinationInterface);
+  public function providesResultType($destinationInterface): bool;
 
   /**
    * @param string $sourceClass
    *
    * @return bool
    */
-  public function acceptsSourceClass($sourceClass);
+  public function acceptsSourceClass($sourceClass): bool;
 
   /**
    * @return int
    */
-  public function getSpecifity();
+  public function getSpecifity(): int;
 
 }

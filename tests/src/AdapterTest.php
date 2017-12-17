@@ -202,7 +202,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
   /**
    * @return array[]
    */
-  public function providerATA() {
+  public function providerATA(): array {
     $sets = [];
     $sets[] = [
       $this->buildAta(),
@@ -213,7 +213,10 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
     return $sets;
   }
 
-  private function buildNewAta() {
+  /**
+   * @return \Donquixote\Adaptism\ATA\ATAInterface
+   */
+  private function buildNewAta(): ATAInterface {
 
     return ATABuilder::create()
       ->withCustomATA(
@@ -231,7 +234,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
   /**
    * @return \Donquixote\Adaptism\ATA\ATAInterface
    */
-  private function buildAta() {
+  private function buildAta(): ATAInterface {
     return new ATA_SmartChain(
       $this->buildPartials());
   }
@@ -239,7 +242,7 @@ class AdapterTest extends \PHPUnit_Framework_TestCase {
   /**
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function buildPartials() {
+  private function buildPartials(): array {
 
     $partials = [];
 

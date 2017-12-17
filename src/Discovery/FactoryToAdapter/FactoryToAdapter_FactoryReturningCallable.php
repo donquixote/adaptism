@@ -27,7 +27,7 @@ class FactoryToAdapter_FactoryReturningCallable implements FactoryToAdapterInter
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory) {
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface {
 
     $returnType = $factory->getReturnType();
 

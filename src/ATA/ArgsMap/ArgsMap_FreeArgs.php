@@ -33,7 +33,7 @@ class ArgsMap_FreeArgs implements ArgsMapInterface {
    *
    * @return mixed[]|null
    */
-  public function buildArgs($original, ATAInterface $ata) {
+  public function buildArgs($original, ATAInterface $ata): ?array {
 
     $args = $this->decorated->buildArgs($original, $ata);
 

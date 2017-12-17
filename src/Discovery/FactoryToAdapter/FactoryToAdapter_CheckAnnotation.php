@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
 use Donquixote\Adaptism\Annotation\Adapter;
+use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
 use Donquixote\Annotation\Reader\AnnotationReader;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
 
@@ -26,7 +27,7 @@ class FactoryToAdapter_CheckAnnotation implements FactoryToAdapterInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory) {
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface {
 
     if (!$this->factoryIsAdapter($factory)) {
       return null;
@@ -40,7 +41,7 @@ class FactoryToAdapter_CheckAnnotation implements FactoryToAdapterInterface {
    *
    * @return bool
    */
-  private function factoryIsAdapter(ReflectionFactoryInterface $factory) {
+  private function factoryIsAdapter(ReflectionFactoryInterface $factory): bool {
 
     $reader = AnnotationReader::createWithInstantiator();
 

@@ -21,7 +21,7 @@ class ATAPartial_Callback1 extends ATAPartialBase {
    *
    * @return self
    */
-  public static function fromClassName($class, $sourceType = NULL) {
+  public static function fromClassName($class, $sourceType = NULL): self {
     $callback = CallbackReflection_ClassConstruction::createFromClassName($class);
     return new self(
       $callback,
@@ -35,7 +35,7 @@ class ATAPartial_Callback1 extends ATAPartialBase {
    *
    * @return self|null
    */
-  public static function create(CallbackReflectionInterface $callback, $resultType = NULL) {
+  public static function create(CallbackReflectionInterface $callback, $resultType = NULL): ?self {
 
     $params = $callback->getReflectionParameters();
 
@@ -77,7 +77,7 @@ class ATAPartial_Callback1 extends ATAPartialBase {
     $original,
     $interface,
     ATAInterface $helper
-  ) {
+  ): ?object {
     // Other arguments, e.g. services, might already be part of the callback.
     try {
       return $this->callback->invokeArgs([$original, $helper]);

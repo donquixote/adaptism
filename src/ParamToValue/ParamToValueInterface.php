@@ -14,7 +14,7 @@ interface ParamToValueInterface {
    *
    * @return bool
    */
-  public function paramValueExists(\ReflectionParameter $param);
+  public function paramValueExists(\ReflectionParameter $param): bool;
 
   /**
    * @param \ReflectionParameter $param
@@ -29,6 +29,6 @@ interface ParamToValueInterface {
    *
    * @return string|null
    */
-  public function paramGetPhp(\ReflectionParameter $param);
+  public function paramGetPhp(\ReflectionParameter $param): ?string;
 
 }

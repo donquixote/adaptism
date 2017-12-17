@@ -7,6 +7,7 @@ use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_FreeArgs;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_MoreArgs;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_Simple;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_SimpleWithATA;
+use Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface;
 use Donquixote\Adaptism\ATA\ATAInterface;
 use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
@@ -30,7 +31,7 @@ class FactoryToArgsMap implements FactoryToArgsMapInterface {
    *
    * @return \Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface
    */
-  public function factoryGetArgsMap(ReflectionFactoryInterface $factory) {
+  public function factoryGetArgsMap(ReflectionFactoryInterface $factory): ArgsMapInterface {
 
     $parameters = $factory->getParameters();
 

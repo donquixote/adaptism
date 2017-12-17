@@ -28,7 +28,7 @@ class AdapterDiscovery_Visitor implements AdapterDiscoveryInterface {
    *
    * @return self
    */
-  public static function create(ParamToValueInterface $paramToValue) {
+  public static function create(ParamToValueInterface $paramToValue): self {
     return new self(
       FactoryDiscovery::create(),
       FactoryToAdapter::create($paramToValue));
@@ -51,7 +51,7 @@ class AdapterDiscovery_Visitor implements AdapterDiscoveryInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA) {
+  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA): array {
 
     $factoryVisitor = new FactoryVisitor_CollectAdapters(
       $this->factoryToAdapter);

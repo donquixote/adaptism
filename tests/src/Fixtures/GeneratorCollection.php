@@ -5,7 +5,10 @@ namespace Donquixote\Adaptism\Tests\Fixtures;
 
 class GeneratorCollection {
 
-  public static function trafficLight() {
+  /**
+   * @return \Iterator|string[]
+   */
+  public static function trafficLight(): \Iterator {
     yield 'red';
     yield 'yellow';
     yield 'green';

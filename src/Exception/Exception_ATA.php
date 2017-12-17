@@ -12,7 +12,7 @@ class Exception_ATA extends \Exception {
    *
    * @return self
    */
-  public static function createWithInstead($original, $interface, $instead) {
+  public static function createWithInstead($original, $interface, $instead): self {
 
     $message = strtr(
       "Failed to create !destination\nfor !original.",
@@ -39,7 +39,7 @@ class Exception_ATA extends \Exception {
    *
    * @return self
    */
-  public static function create($original, $interface, $message_append) {
+  public static function create($original, $interface, $message_append): self {
 
     $message = strtr(
       "Failed to create !destination\nfor !original.",
@@ -60,7 +60,7 @@ class Exception_ATA extends \Exception {
    *
    * @return string
    */
-  private static function formatValue($value) {
+  private static function formatValue($value): string {
 
     switch ($type = \gettype($value)) {
       case 'object':

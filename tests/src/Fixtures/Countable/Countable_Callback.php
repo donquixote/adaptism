@@ -25,7 +25,7 @@ class Countable_Callback implements \Countable {
   /**
    * @return int
    */
-  public function count() {
+  public function count(): int {
 
     $n = \call_user_func($this->callable);
 

@@ -28,25 +28,25 @@ class ATA_PartialsList implements ATAInterface {
 
   /**
    * @param object $original
-   * @param string $targetType
+   * @param string $destinationInterface
    *
    * @return object|null
    *   An instance of $destinationInterface, or
    *   NULL, if adaption is not supported for the given types.
    */
-  public function adapt($original, $targetType) {
+  public function adapt(object $original, string $destinationInterface): ?object {
 
     $sourceType = \get_class($original);
 
-    $partials = $this->partialsGrouped[$targetType][$sourceType]
-      ?? ($this->partialsGrouped[$targetType][$sourceType] = $this->typesGetPartials(
-        $targetType,
+    $partials = $this->partialsGrouped[$destinationInterface][$sourceType]
+      ?? ($this->partialsGrouped[$destinationInterface][$sourceType] = $this->typesGetPartials(
+        $destinationInterface,
         $sourceType));
 
     foreach ($partials as $partial) {
 
       try {
-        $candidate = $partial->adapt($original, $targetType, $this);
+        $candidate = $partial->adapt($original, $destinationInterface, $this);
       }
       catch (Exception_MisbehavingATA $e) {
         // @todo Log misbehaving partial.
@@ -55,7 +55,7 @@ class ATA_PartialsList implements ATAInterface {
       }
 
       if (NULL !== $candidate) {
-        if ($candidate instanceof $targetType) {
+        if ($candidate instanceof $destinationInterface) {
           return $candidate;
         }
         // @todo Log misbehaving partial.
@@ -65,7 +65,13 @@ class ATA_PartialsList implements ATAInterface {
     return null;
   }
 
-  private function typesGetPartials($targetType, $sourceType) {
+  /**
+   * @param string $targetType
+   * @param string $sourceType
+   *
+   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   */
+  private function typesGetPartials(string $targetType, string $sourceType): array {
 
     $partials = [];
     foreach ($this->partialsList->typeGetPartials($targetType) as $partial) {

@@ -16,7 +16,7 @@ final class Adapter implements ClassedAnnotationInterface {
    *
    * @return self
    */
-  public static function create(array $values, \Reflector $reflector) {
+  public static function create(array $values, \Reflector $reflector): self {
     // For now we assume this annotation won't use any arguments.
     return new self();
   }

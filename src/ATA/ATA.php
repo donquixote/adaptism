@@ -19,7 +19,7 @@ class ATA implements ATAInterface {
    *
    * @return self
    */
-  public static function createFromPartials(array $partials) {
+  public static function createFromPartials(array $partials): self {
     return new self(new ATAPartial_SmartChain($partials));
   }
 
@@ -31,20 +31,20 @@ class ATA implements ATAInterface {
   }
 
   /**
-   * @param mixed $source
-   * @param string $interface
+   * @param mixed $original
+   * @param string $destinationInterface
    *
    * @return object|null
    *   An instance of $interface, or NULL.
    */
-  public function adapt($source, $interface) {
+  public function adapt(object $original, string $destinationInterface): ?object {
 
-    if ($source instanceof $interface) {
-      return $source;
+    if ($original instanceof $destinationInterface) {
+      return $original;
     }
 
     try {
-      return $this->partial->adapt($source, $interface, $this);
+      return $this->partial->adapt($original, $destinationInterface, $this);
     }
     catch (Exception_MisbehavingATA $e) {
       // @todo Do something!

@@ -56,7 +56,7 @@ class ATA_SmartChain implements ATAInterface {
    * @return object|null
    *   An instance of $destinationInterface.
    */
-  public function adapt($original, $destinationInterface) {
+  public function adapt(object $original, string $destinationInterface): ?object {
 
     if ($original instanceof $destinationInterface) {
       return $original;
@@ -100,7 +100,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function sourceTypeAndTargetTypeGetPartials($sourceType, $targetType) {
+  private function sourceTypeAndTargetTypeGetPartials($sourceType, $targetType): array {
 
     return $this->partialsGrouped[$sourceType][$targetType] ?? ($this->partialsGrouped[$sourceType][$targetType] = $this->sourceTypeAndTargetTypeCollectPartials($sourceType, $targetType));
   }
@@ -111,7 +111,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function sourceTypeAndTargetTypeCollectPartials($sourceType, $targetType) {
+  private function sourceTypeAndTargetTypeCollectPartials($sourceType, $targetType): array {
 
     return array_intersect_key(
       $this->sourceTypeGetPartials($sourceType),
@@ -123,7 +123,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function targetTypeGetPartials($interface) {
+  private function targetTypeGetPartials($interface): array {
 
     return $this->partialsByTargetType[$interface]
       ?? $this->partialsByTargetType[$interface] = $this->targetTypeCollectPartials($interface);
@@ -134,7 +134,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function targetTypeCollectPartials($targetType) {
+  private function targetTypeCollectPartials($targetType): array {
 
     $partials = [];
     /** @var \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface $partial */
@@ -153,7 +153,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function sourceTypeGetPartials($interface) {
+  private function sourceTypeGetPartials($interface): array {
 
     return $this->partialsBySourceType[$interface]
       ?? $this->partialsBySourceType[$interface] = $this->sourceTypeCollectPartials($interface);
@@ -164,7 +164,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function sourceTypeCollectPartials($sourceType) {
+  private function sourceTypeCollectPartials($sourceType): array {
 
     $partials = [];
     /** @var \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface $partial */
@@ -183,7 +183,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return bool
    */
-  public function providesResultType($interface) {
+  public function providesResultType($interface): bool {
     return [] !== $this->targetTypeGetPartials($interface);
   }
 
@@ -192,7 +192,7 @@ class ATA_SmartChain implements ATAInterface {
    *
    * @return bool
    */
-  public function acceptsSourceClass($interface) {
+  public function acceptsSourceClass($interface): bool {
     return [] !== $this->sourceTypeGetPartials($interface);
   }
 }

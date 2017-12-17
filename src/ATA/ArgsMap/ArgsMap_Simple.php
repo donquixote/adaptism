@@ -13,7 +13,7 @@ class ArgsMap_Simple implements ArgsMapInterface {
    *
    * @return mixed[]|null
    */
-  public function buildArgs($original, ATAInterface $ata) {
+  public function buildArgs($original, ATAInterface $ata): ?array {
 
     return [$original];
   }

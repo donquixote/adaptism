@@ -58,10 +58,9 @@ class DefinitionToATA_ATAStaticFactory implements DefinitionToATAInterface {
       if ('object' !== $type = \gettype($instance)) {
         throw new Exception_ATABuilder("Expected method $class::$methodName() to return an ATAPartialInterface object, $type found instead.");
       }
-      else {
-        $wrongClass = \get_class($instance);
-        throw new Exception_ATABuilder("Expected method $class::$methodName() to return an ATAPartialInterface object, $wrongClass object found instead.");
-      }
+
+      $wrongClass = \get_class($instance);
+      throw new Exception_ATABuilder("Expected method $class::$methodName() to return an ATAPartialInterface object, $wrongClass object found instead.");
     }
 
     return $instance;

@@ -34,21 +34,21 @@ class RgbColor implements RgbColorInterface {
   /**
    * @return int
    */
-  public function red() {
+  public function red(): int {
     return $this->r;
   }
 
   /**
    * @return int
    */
-  public function green() {
+  public function green(): int {
     return $this->g;
   }
 
   /**
    * @return int
    */
-  public function blue() {
+  public function blue(): int {
     return $this->b;
   }
 }

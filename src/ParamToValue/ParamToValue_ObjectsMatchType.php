@@ -27,7 +27,7 @@ class ParamToValue_ObjectsMatchType implements ParamToValueInterface {
    *
    * @return bool
    */
-  public function paramValueExists(\ReflectionParameter $param) {
+  public function paramValueExists(\ReflectionParameter $param): bool {
     return FALSE !== $this->paramGetObjectOrFalse($param);
   }
 
@@ -80,7 +80,7 @@ class ParamToValue_ObjectsMatchType implements ParamToValueInterface {
    *
    * @return string|null
    */
-  public function paramGetPhp(\ReflectionParameter $param) {
+  public function paramGetPhp(\ReflectionParameter $param): ?string {
     // Not supported here.
     return NULL;
   }

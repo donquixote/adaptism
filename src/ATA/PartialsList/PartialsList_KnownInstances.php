@@ -16,7 +16,7 @@ class PartialsList_KnownInstances implements PartialsListInterface {
    *
    * @return self
    */
-  public static function create(array $partials) {
+  public static function create(array $partials): self {
 
     $partialsByType = [];
     foreach ($partials as $partial) {

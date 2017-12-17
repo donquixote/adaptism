@@ -94,7 +94,7 @@ class DiscoveryTest extends \PHPUnit_Framework_TestCase {
   /**
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  private function discoverPartials() {
+  private function discoverPartials(): array {
     return FixturesUtil::discoverPartials();
   }
 
@@ -113,7 +113,7 @@ class DiscoveryTest extends \PHPUnit_Framework_TestCase {
    *
    * @return string
    */
-  private static function exportItemsAndSort(array $items) {
+  private static function exportItemsAndSort(array $items): string {
 
     $export = [];
     foreach ($items as $item) {

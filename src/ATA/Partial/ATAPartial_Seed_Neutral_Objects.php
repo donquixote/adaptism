@@ -23,6 +23,7 @@ class ATAPartial_Seed_Neutral_Objects implements ATAPartialInterface {
    */
   public function __construct(array $objects) {
 
+    /** @var object[][] $map */
     $map = [];
     foreach ($objects as $object) {
 
@@ -71,6 +72,9 @@ class ATAPartial_Seed_Neutral_Objects implements ATAPartialInterface {
     return $this->objectsByClassName[$interface] ?? null;
   }
 
+  /**
+   * @return null|string
+   */
   public function getResultType(): ?string {
     return 'object';
   }
@@ -80,7 +84,7 @@ class ATAPartial_Seed_Neutral_Objects implements ATAPartialInterface {
    *
    * @return bool
    */
-  public function providesResultType($destinationInterface) {
+  public function providesResultType($destinationInterface): bool {
     return isset($this->objectsByClassName[$destinationInterface]);
   }
 

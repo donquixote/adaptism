@@ -29,7 +29,7 @@ trait ATAPartial_SpecifityTrait {
   /**
    * @return int
    */
-  public function getSpecifity() {
+  public function getSpecifity(): int {
     return $this->specifity;
   }
 

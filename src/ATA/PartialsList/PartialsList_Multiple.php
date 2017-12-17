@@ -15,7 +15,7 @@ class PartialsList_Multiple implements PartialsListInterface {
    *
    * @return \Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface
    */
-  public static function create(array $lists) {
+  public static function create(array $lists): PartialsListInterface {
 
     if ([] === $lists) {
       return new PartialsList_Empty();

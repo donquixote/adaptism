@@ -23,7 +23,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
   /**
    * @return self
    */
-  public static function create() {
+  public static function create(): self {
     return new self(
       (new BetterReflection())->classReflector());
   }

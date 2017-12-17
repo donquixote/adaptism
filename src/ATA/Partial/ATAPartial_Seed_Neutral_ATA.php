@@ -35,6 +35,9 @@ class ATAPartial_Seed_Neutral_ATA implements ATAPartialInterface {
     return $ata;
   }
 
+  /**
+   * @return null|string
+   */
   public function getResultType(): ?string {
     return ATAInterface::class;
   }
@@ -44,7 +47,7 @@ class ATAPartial_Seed_Neutral_ATA implements ATAPartialInterface {
    *
    * @return bool
    */
-  public function providesResultType($destinationInterface) {
+  public function providesResultType($destinationInterface): bool {
     return $destinationInterface === ATAInterface::class;
   }
 
@@ -53,7 +56,7 @@ class ATAPartial_Seed_Neutral_ATA implements ATAPartialInterface {
    *
    * @return bool
    */
-  public function acceptsSourceClass($sourceClass) {
-    return Seed_Neutral::class;
+  public function acceptsSourceClass($sourceClass): bool {
+    return is_a($sourceClass, Seed_Neutral::class, true);
   }
 }

@@ -12,5 +12,5 @@ interface AdapterDiscoveryInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA);
+  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA): array;
 }

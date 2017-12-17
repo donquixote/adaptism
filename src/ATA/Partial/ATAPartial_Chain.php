@@ -46,32 +46,35 @@ class ATAPartial_Chain implements ATAPartialInterface {
     return NULL;
   }
 
+  /**
+   * @return null|string
+   */
   public function getResultType(): ?string {
     return null;
   }
 
   /**
-   * @param string $interface
+   * @param string $destinationInterface
    *
    * @return bool
    */
-  public function providesResultType($interface) {
+  public function providesResultType($destinationInterface): bool {
     return TRUE;
   }
 
   /**
-   * @param string $interface
+   * @param string $sourceClass
    *
    * @return bool
    */
-  public function acceptsSourceClass($interface) {
+  public function acceptsSourceClass($sourceClass): bool {
     return TRUE;
   }
 
   /**
    * @return int
    */
-  public function getSpecifity() {
+  public function getSpecifity(): int {
     return 0;
   }
 

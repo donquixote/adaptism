@@ -20,7 +20,7 @@ class AdapterDiscovery implements AdapterDiscoveryInterface {
    *
    * @return self
    */
-  public static function create(ParamToValueInterface $paramToValue) {
+  public static function create(ParamToValueInterface $paramToValue): self {
     return new self(ClassFileToAdapters::create($paramToValue));
   }
 
@@ -36,7 +36,7 @@ class AdapterDiscovery implements AdapterDiscoveryInterface {
    *
    * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
    */
-  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA) {
+  public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA): array {
 
     $partials = [];
     foreach ($classFilesIA->withRealpathRoot() as $fileRealpath => $class) {

@@ -19,9 +19,9 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
    * @param string $class
    * @param string|null $sourceType
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartial_CallbackNoHelper
+   * @return self
    */
-  public static function fromClassName($class, $sourceType = NULL) {
+  public static function fromClassName($class, $sourceType = NULL): self {
     $callback = CallbackReflection_ClassConstruction::createFromClassName($class);
     return new self(
       $callback,
@@ -33,9 +33,9 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
    * @param \Donquixote\CallbackReflection\Callback\CallbackReflectionInterface $callback
    * @param string|null $resultType
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
+   * @return self|null
    */
-  public static function create(CallbackReflectionInterface $callback, $resultType = NULL) {
+  public static function create(CallbackReflectionInterface $callback, $resultType = NULL): ?self {
 
     $params = $callback->getReflectionParameters();
 
@@ -77,7 +77,7 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
     $original,
     $interface,
     ATAInterface $helper
-  ) {
+  ): ?object {
 
     try {
       return $this->callback->invokeArgs([$original]);
