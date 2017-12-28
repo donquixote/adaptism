@@ -77,7 +77,7 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
     $original,
     $interface,
     ATAInterface $helper
-  ): ?object {
+  ) {
 
     try {
       return $this->callback->invokeArgs([$original]);

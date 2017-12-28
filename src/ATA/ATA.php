@@ -37,7 +37,7 @@ class ATA implements ATAInterface {
    * @return object|null
    *   An instance of $interface, or NULL.
    */
-  public function adapt(object $original, string $destinationInterface): ?object {
+  public function adapt($original, string $destinationInterface) {
 
     if ($original instanceof $destinationInterface) {
       return $original;

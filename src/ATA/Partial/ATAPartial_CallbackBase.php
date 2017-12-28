@@ -54,7 +54,7 @@ abstract class ATAPartial_CallbackBase extends ATAPartialBase {
     $original,
     $interface,
     ATAInterface $helper
-  ): ?object {
+  ) {
     $args = [$original];
     if (NULL !== $this->ataPos) {
       $args[$this->ataPos] = $helper;

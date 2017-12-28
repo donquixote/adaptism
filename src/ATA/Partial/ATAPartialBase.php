@@ -91,7 +91,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
     $original,
     $interface,
     ATAInterface $ata
-  ): ?object {
+  ) {
 
     if (NULL !== $this->sourceType && !$original instanceof $this->sourceType) {
       return NULL;
@@ -124,7 +124,7 @@ abstract class ATAPartialBase implements ATAPartialInterface {
   abstract protected function doAdapt(
     $original,
     $interface,
-    ATAInterface $ata): ?object;
+    ATAInterface $ata);
 
   /**
    * @param string $sourceClass

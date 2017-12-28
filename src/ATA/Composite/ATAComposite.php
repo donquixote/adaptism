@@ -35,7 +35,7 @@ class ATAComposite implements ATACompositeInterface {
    *   An instance of $destinationInterface, or
    *   NULL, if
    */
-  public function adapt(object $original, string $destinationInterface): ?object {
+  public function adapt($original, string $destinationInterface) {
     return $this->ata->adapt($original, $destinationInterface);
   }
 

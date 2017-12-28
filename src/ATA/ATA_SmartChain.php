@@ -56,7 +56,7 @@ class ATA_SmartChain implements ATAInterface {
    * @return object|null
    *   An instance of $destinationInterface.
    */
-  public function adapt(object $original, string $destinationInterface): ?object {
+  public function adapt($original, string $destinationInterface) {
 
     if ($original instanceof $destinationInterface) {
       return $original;

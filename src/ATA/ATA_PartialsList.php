@@ -34,7 +34,7 @@ class ATA_PartialsList implements ATAInterface {
    *   An instance of $destinationInterface, or
    *   NULL, if adaption is not supported for the given types.
    */
-  public function adapt(object $original, string $destinationInterface): ?object {
+  public function adapt($original, string $destinationInterface) {
 
     $sourceType = \get_class($original);
 
