@@ -21,7 +21,8 @@ class AdapterDiscovery implements AdapterDiscoveryInterface {
    * @return self
    */
   public static function create(ParamToValueInterface $paramToValue): self {
-    return new self(ClassFileToAdapters::create($paramToValue));
+    return new self(
+      ClassFileToAdapters::create($paramToValue));
   }
 
   /**

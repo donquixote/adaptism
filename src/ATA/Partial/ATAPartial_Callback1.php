@@ -67,7 +67,7 @@ class ATAPartial_Callback1 extends ATAPartialBase {
   /**
    * @param $original
    * @param $interface
-   * @param \Donquixote\Adaptism\ATA\ATAInterface $helper
+   * @param \Donquixote\Adaptism\ATA\ATAInterface $ata
    *
    * @return null|object
    *
@@ -76,11 +76,11 @@ class ATAPartial_Callback1 extends ATAPartialBase {
   protected function doAdapt(
     $original,
     $interface,
-    ATAInterface $helper
-  ): ?object {
+    ATAInterface $ata
+  ) {
     // Other arguments, e.g. services, might already be part of the callback.
     try {
-      return $this->callback->invokeArgs([$original, $helper]);
+      return $this->callback->invokeArgs([$original, $ata]);
     }
     catch (\Exception $e) {
       throw new Exception_MisbehavingATA("Exception in callback.", 0, $e);

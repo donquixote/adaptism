@@ -24,10 +24,8 @@ class ATAPartial_Chain implements ATAPartialInterface {
    * @param string $interface
    * @param \Donquixote\Adaptism\ATA\ATAInterface $helper
    *
-   * @return null|object An instance of $interface, or NULL.
-   * An instance of $interface, or NULL.
-   *
-   * @throws \Donquixote\Adaptism\Exception\Exception_ATABuilder
+   * @return null|object
+   *   An instance of $interface, or NULL.
    */
   public function adapt(
     $source,

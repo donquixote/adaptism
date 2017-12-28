@@ -67,7 +67,7 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
   /**
    * @param $original
    * @param $interface
-   * @param \Donquixote\Adaptism\ATA\ATAInterface $helper
+   * @param \Donquixote\Adaptism\ATA\ATAInterface $ata
    *
    * @return null|object
    *
@@ -76,7 +76,7 @@ class ATAPartial_CallbackNoHelper extends ATAPartialBase {
   protected function doAdapt(
     $original,
     $interface,
-    ATAInterface $helper
+    ATAInterface $ata
   ) {
 
     try {

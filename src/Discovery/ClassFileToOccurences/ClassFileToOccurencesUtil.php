@@ -23,6 +23,14 @@ class ClassFileToOccurencesUtil {
 
       $name = $returnType->__toString();
 
+      if ('self' === $name || 'static' === $name) {
+        if (!$reflFunction instanceof ReflectionMethod) {
+          return [];
+        }
+
+        return [$reflFunction->getDeclaringClass()->getName()];
+      }
+
       if ($returnType->isBuiltin()) {
 
         if ('object' !== $name) {
@@ -30,14 +38,6 @@ class ClassFileToOccurencesUtil {
         }
 
         return ['object'];
-      }
-
-      if ('self' === $name || 'static' === $name) {
-        if (!$reflFunction instanceof ReflectionMethod) {
-          return [];
-        }
-
-        return $reflFunction->getDeclaringClass()->getName();
       }
 
       return [];

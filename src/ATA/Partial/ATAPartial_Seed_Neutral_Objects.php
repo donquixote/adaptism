@@ -18,8 +18,6 @@ class ATAPartial_Seed_Neutral_Objects implements ATAPartialInterface {
 
   /**
    * @param array $objects
-   *
-   * @throws \ReflectionException
    */
   public function __construct(array $objects) {
 

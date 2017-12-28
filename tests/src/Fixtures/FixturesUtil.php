@@ -56,14 +56,14 @@ class FixturesUtil {
     $paramToValue = new ParamToValue_Empty();
 
     return AdapterDiscovery::create($paramToValue)
-      ->classFilesIAGetPartials(
-        self::getClassFilesIA());
+      ->classFilesIAGetPartials(self::getClassFilesIA());
   }
 
   /**
    * @return \Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface
    */
   public static function getClassFilesIA(): ClassFilesIAInterface {
+
     return ClassFilesIA_NamespaceDirectoryPsr4::create(
       __DIR__,
       __NAMESPACE__);

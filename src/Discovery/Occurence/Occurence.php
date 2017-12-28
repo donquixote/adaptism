@@ -16,13 +16,6 @@ class Occurence {
   private $returnTypeClassName;
 
   /**
-   * @param array $definition
-   */
-  public function __construct(array $definition) {
-    $this->definition = $definition;
-  }
-
-  /**
    * @param string $class
    * @param string $typePrefix
    *
@@ -36,6 +29,13 @@ class Occurence {
       ]);
     $occurence->returnTypeClassName = $class;
     return $occurence;
+  }
+
+  /**
+   * @param array $definition
+   */
+  public function __construct(array $definition) {
+    $this->definition = $definition;
   }
 
   /**

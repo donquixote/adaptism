@@ -84,8 +84,6 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    * @param \Donquixote\Adaptism\ATA\ATAInterface $ata
    *
    * @return null|object
-   *
-   * @throws \Donquixote\Adaptism\Exception\Exception_MisbehavingATA
    */
   final public function adapt(
     $original,
@@ -119,7 +117,6 @@ abstract class ATAPartialBase implements ATAPartialInterface {
    *
    * @return null|object
    *
-   * @throws \Donquixote\Adaptism\Exception\Exception_MisbehavingATA
    */
   abstract protected function doAdapt(
     $original,

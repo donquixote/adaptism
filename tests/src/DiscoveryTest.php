@@ -3,18 +3,81 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Tests;
 
+use Donquixote\Adaptism\Annotation\Adapter;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_Simple;
 use Donquixote\Adaptism\ATA\ATABuilder;
 use Donquixote\Adaptism\ATA\Partial\ATAPartial_ClassInstance;
 use Donquixote\Adaptism\ATA\Partial\ATAPartial_Seed_Neutral_Object;
 use Donquixote\Adaptism\ATA\Partial\ATAPartial_StaticMethod;
+use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurences_BetterReflection;
+use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurencesUtil;
+use Donquixote\Adaptism\Discovery\Occurence\Occurence;
 use Donquixote\Adaptism\Tests\Fixtures\Color\Hex\HexColor;
 use Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColorInterface;
 use Donquixote\Adaptism\Tests\Fixtures\Countable\Countable_Traversable;
 use Donquixote\Adaptism\Tests\Fixtures\FixturesUtil;
 use PHPUnit\Framework\TestCase;
+use Roave\BetterReflection\BetterReflection;
 
 class DiscoveryTest extends TestCase {
+
+  public function testClassFilesIA() {
+    $classFilesIA = FixturesUtil::getClassFilesIA();
+    self::assertSame(
+      [
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Hex/HexColor.php' => HexColor::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Hex/HexColorInterface.php' => Fixtures\Color\Hex\HexColorInterface::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Rgb/RgbColor.php' => Fixtures\Color\Rgb\RgbColor::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Rgb/RgbColorInterface.php' => RgbColorInterface::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Countable/Countable_Callback.php' => Fixtures\Countable\Countable_Callback::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Countable/Countable_Traversable.php' => Countable_Traversable::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/FixturesUtil.php' => FixturesUtil::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/GeneratorCollection.php' => Fixtures\GeneratorCollection::class,
+      ],
+      iterator_to_array($classFilesIA->getIterator()));
+  }
+
+  public function testFileContentMightHaveAnnotation() {
+    $file = '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Hex/HexColor.php';
+    $fileContent = file_get_contents($file);
+    self::assertTrue(ClassFileToOccurencesUtil::fileContentMightHaveAnnotation(
+      $fileContent,
+      Adapter::class));
+  }
+
+  public function testReturnTypeClassNames() {
+    $reflFunction = (new BetterReflection())->classReflector()->reflect(HexColor::class)->getMethod('fromRgb');
+    self::assertSame(
+      [HexColor::class],
+      ClassFileToOccurencesUtil::functionGetReturnTypeClassNames($reflFunction));
+  }
+
+  public function testClassFileToOccurences() {
+
+    $classFileToOccurences = ClassFileToOccurences_BetterReflection::create();
+
+    $occurence0 = (new Occurence(
+      [
+        'type' => 'adapterStaticFactory',
+        'class' => HexColor::class,
+        'method' => 'fromRgb',
+      ]))
+      ->withReturnTypeClassName(HexColor::class);
+
+    $occurence1 = Occurence::fromStaticMethod(
+      HexColor::class,
+      'fromRgb',
+      'adapter')
+      ->withReturnTypeClassName(HexColor::class);
+
+    self::assertSameExport($occurence0, $occurence1);
+
+    self::assertSameExport(
+      [$occurence0],
+      $classFileToOccurences->classFileGetOccurences(
+        HexColor::class,
+        '/home/lemonhead/projects/phplib/adaptism/tests/src/Fixtures/Color/Hex/HexColor.php'));
+  }
 
   public function testSimplePartialsList() {
 
@@ -72,7 +135,7 @@ class DiscoveryTest extends TestCase {
       $list->typeGetPartials(\Countable::class));
   }
 
-  public function testDiscoverPartials() {
+  public function _testDiscoverPartials() {
 
     $expected = [];
 
@@ -89,14 +152,17 @@ class DiscoveryTest extends TestCase {
 
     self::assertSameExportAndSort(
       $expected,
-      $this->discoverPartials());
+      FixturesUtil::discoverPartials());
   }
 
   /**
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   * @param mixed $expected
+   * @param mixed $actual
    */
-  private function discoverPartials(): array {
-    return FixturesUtil::discoverPartials();
+  private static function assertSameExport($expected, $actual) {
+    self::assertSame(
+      var_export($expected, true),
+      var_export($actual, true));
   }
 
   /**
