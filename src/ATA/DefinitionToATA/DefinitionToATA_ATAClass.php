@@ -5,17 +5,17 @@ namespace Donquixote\Adaptism\ATA\DefinitionToATA;
 
 use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
 use Donquixote\Adaptism\Exception\Exception_ATABuilder;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class DefinitionToATA_ATAClass implements DefinitionToATAInterface {
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface
    */
   private $paramToValue;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    */
   public function __construct(ParamToValueInterface $paramToValue) {
     $this->paramToValue = $paramToValue;

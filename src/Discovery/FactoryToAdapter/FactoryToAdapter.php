@@ -8,8 +8,8 @@ use Donquixote\Adaptism\ATA\Partial\ATAPartial_StaticMethod;
 use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
 use Donquixote\Adaptism\Discovery\FactoryToArgsMap\FactoryToArgsMap;
 use Donquixote\Adaptism\Discovery\FactoryToArgsMap\FactoryToArgsMapInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class FactoryToAdapter implements FactoryToAdapterInterface {
 
@@ -19,7 +19,7 @@ class FactoryToAdapter implements FactoryToAdapterInterface {
   private $factoryToArgsMap;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return \Donquixote\Adaptism\Discovery\FactoryToAdapter\FactoryToAdapterInterface
    */
@@ -39,7 +39,7 @@ class FactoryToAdapter implements FactoryToAdapterInterface {
   }
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface|null $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface|null $paramToValue
    *
    * @return self
    */

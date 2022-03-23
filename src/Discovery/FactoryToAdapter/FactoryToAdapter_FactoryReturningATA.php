@@ -4,19 +4,19 @@ declare(strict_types=1);
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
 use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
-use Donquixote\Adaptism\Util\ReflectionUtil;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
+use Donquixote\FactoryReflection\Util\FactoryUtil;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class FactoryToAdapter_FactoryReturningATA implements FactoryToAdapterInterface {
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface
    */
   private $paramToValue;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    */
   public function __construct(ParamToValueInterface $paramToValue) {
     $this->paramToValue = $paramToValue;
@@ -39,15 +39,9 @@ class FactoryToAdapter_FactoryReturningATA implements FactoryToAdapterInterface 
       return null;
     }
 
-    $args = ReflectionUtil::paramsGetValues(
-      $factory->getParameters(),
+    $instance = FactoryUtil::factoryInvokePTV(
+      $factory,
       $this->paramToValue);
-
-    if (null === $args) {
-      return null;
-    }
-
-    $instance = $factory->invokeArgs($args);
 
     if (!$instance instanceof ATAPartialInterface) {
       return null;

@@ -5,8 +5,8 @@ namespace Donquixote\Adaptism\Discovery;
 
 use Donquixote\Adaptism\Discovery\ClassFileToAdapters\ClassFileToAdapters;
 use Donquixote\Adaptism\Discovery\ClassFileToAdapters\ClassFileToAdaptersInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class AdapterDiscovery implements AdapterDiscoveryInterface {
 
@@ -16,7 +16,7 @@ class AdapterDiscovery implements AdapterDiscoveryInterface {
   private $classFileToAdapters;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return self
    */

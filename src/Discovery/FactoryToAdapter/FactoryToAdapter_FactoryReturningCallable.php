@@ -4,19 +4,19 @@ declare(strict_types=1);
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
 use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\Adaptism\Util\ReflectionUtil;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class FactoryToAdapter_FactoryReturningCallable implements FactoryToAdapterInterface {
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface
    */
   private $paramToValue;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    */
   public function __construct(ParamToValueInterface $paramToValue) {
     $this->paramToValue = $paramToValue;

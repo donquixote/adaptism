@@ -4,12 +4,12 @@ declare(strict_types=1);
 namespace Donquixote\Adaptism\ATA\DefinitionToATA;
 
 use Donquixote\Adaptism\Discovery\FunctionToArgsMap\FunctionToArgsMap;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class DefinitionToATA {
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return \Donquixote\Adaptism\ATA\DefinitionToATA\DefinitionToATAInterface
    */

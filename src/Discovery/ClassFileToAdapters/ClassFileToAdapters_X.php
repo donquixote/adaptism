@@ -5,12 +5,12 @@ namespace Donquixote\Adaptism\Discovery\ClassFileToAdapters;
 
 use Donquixote\Adaptism\Discovery\FactoryToAdapter\FactoryToAdapter;
 use Donquixote\Adaptism\Discovery\FactoryToAdapter\FactoryToAdapterInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\FactoryReflection\ClassFileToFactories\ClassFileToFactories;
 use Donquixote\FactoryReflection\ClassFileToFactories\ClassFileToFactoriesInterface;
 use Donquixote\FactoryReflection\ClassToFactories\ClassToFactories;
 use Donquixote\ReflectionKit\AliasResolver\AliasResolver;
 use Donquixote\ReflectionKit\ContextFinder\ContextFinder_PhpTokenParser;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
 
@@ -30,7 +30,7 @@ class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
   private $contextFinder;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return self
    */
@@ -66,7 +66,7 @@ class ClassFileToAdapters_X implements ClassFileToAdaptersInterface {
       return [];
     }
 
-    /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
+    /** @noinspection PhpUnhandledExceptionInspection */
     $reflClass = new \ReflectionClass($class);
 
     if ($fileRealpath !== $reflClass->getFileName()) {

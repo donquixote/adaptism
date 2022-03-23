@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Util;
 
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 /**
  * @see \Roave\BetterReflection\BetterReflection
@@ -12,12 +12,13 @@ class ReflectionUtil {
 
   /**
    * @param \ReflectionParameter[] $params
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return mixed[]|null
    */
   public static function paramsGetValues(array $params, ParamToValueInterface $paramToValue): ?array {
 
+    // Create a unique value to compare against.
     $else = new \stdClass();
 
     $argValues = [];

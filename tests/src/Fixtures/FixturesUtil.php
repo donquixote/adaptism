@@ -11,9 +11,9 @@ use Donquixote\Adaptism\DefinitionList\DefinitionList_ClassFilesIA;
 use Donquixote\Adaptism\DefinitionList\DefinitionListInterface;
 use Donquixote\Adaptism\Discovery\AdapterDiscovery;
 use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurences_BetterReflection;
-use Donquixote\Adaptism\ParamToValue\ParamToValue_Empty;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIA_NamespaceDirectoryPsr4;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValue_Empty;
 
 class FixturesUtil {
 

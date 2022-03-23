@@ -9,18 +9,18 @@ use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_Simple;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_SimpleWithATA;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface;
 use Donquixote\Adaptism\ATA\ATAInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class FactoryToArgsMap implements FactoryToArgsMapInterface {
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface|null
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface|null
    */
   private $paramToValue;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface|null $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface|null $paramToValue
    */
   public function __construct(ParamToValueInterface $paramToValue = NULL) {
     $this->paramToValue = $paramToValue;

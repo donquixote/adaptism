@@ -231,7 +231,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Donquixote\Cf\SchemaToAnything</find>
+      <find>Donquixote\ObCK\SchemaToAnything</find>
       <find>SchemaToAnythingPartial</find>
       <find>chema</find>
       <find>scandir</find>
@@ -240,9 +240,9 @@
       <find>getParam</find>
       <find>use Donquixote\Annotation\</find>
       <find>preg.*return</find>
-      <find>Cf\Discovery</find>
-      <find>Cf\ATA</find>
-      <find>Donquixote\Cf</find>
+      <find>ObCK\Discovery</find>
+      <find>ObCK\ATA</find>
+      <find>Donquixote\ObCK</find>
     </findStrings>
     <replaceStrings>
       <replace>Donquixote\Adaptism\ATA</replace>

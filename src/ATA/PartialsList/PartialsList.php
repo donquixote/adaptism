@@ -8,13 +8,13 @@ use Donquixote\Adaptism\ATA\DefinitionToATA\DefinitionToATA;
 use Donquixote\Adaptism\DefinitionList\DefinitionList_Buffer;
 use Donquixote\Adaptism\DefinitionList\DefinitionListInterface;
 use Donquixote\Adaptism\DefinitionList\TypeToDefinitions_Buffer;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class PartialsList {
 
   /**
    * @param \Donquixote\Adaptism\DefinitionList\DefinitionListInterface $definitionList
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return \Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface
    *

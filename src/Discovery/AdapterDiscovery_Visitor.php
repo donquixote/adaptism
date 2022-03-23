@@ -6,10 +6,10 @@ namespace Donquixote\Adaptism\Discovery;
 use Donquixote\Adaptism\Discovery\FactoryToAdapter\FactoryToAdapter;
 use Donquixote\Adaptism\Discovery\FactoryToAdapter\FactoryToAdapterInterface;
 use Donquixote\Adaptism\Discovery\FactoryVisitor\FactoryVisitor_CollectAdapters;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface;
 use Donquixote\FactoryDiscovery\Discovery\FactoryDiscovery;
 use Donquixote\FactoryDiscovery\Discovery\FactoryDiscoveryInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class AdapterDiscovery_Visitor implements AdapterDiscoveryInterface {
 
@@ -24,7 +24,7 @@ class AdapterDiscovery_Visitor implements AdapterDiscoveryInterface {
   private $factoryToAdapter;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return self
    */

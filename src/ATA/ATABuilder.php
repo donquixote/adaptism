@@ -21,10 +21,10 @@ use Donquixote\Adaptism\DefinitionList\DefinitionListInterface;
 use Donquixote\Adaptism\DefinitionList\TypeToDefinitions_Buffer;
 use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurences_BetterReflection;
 use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurencesInterface;
-use Donquixote\Adaptism\ParamToValue\ParamToValue_Empty;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIA_Multiple;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValue_Empty;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class ATABuilder {
 
@@ -49,7 +49,7 @@ class ATABuilder {
   private $classFileToOccurences;
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface
    */
   private $paramToValue;
 
@@ -75,7 +75,7 @@ class ATABuilder {
   }
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
    *
    * @return static
    */

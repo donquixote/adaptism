@@ -42,7 +42,7 @@
     "donquixote/callback-reflection": "*",
     "donquixote/factory-discovery": "*",
     "donquixote/reflectionkit": "*",
-    "roave/better-reflection": "~2.0"
+    "roave/better-reflection": "*"
   },
   "autoload": {
     "psr-4": { "Donquixote\\Adaptism\\": "src/" }

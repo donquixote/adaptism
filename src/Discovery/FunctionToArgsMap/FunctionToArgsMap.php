@@ -10,17 +10,17 @@ use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_SimpleWithATA;
 use Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface;
 use Donquixote\Adaptism\ATA\ATAInterface;
 use Donquixote\Adaptism\Exception\Exception_ATABuilder;
-use Donquixote\Adaptism\ParamToValue\ParamToValueInterface;
+use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
 class FunctionToArgsMap implements FunctionToArgsMapInterface {
 
   /**
-   * @var \Donquixote\Adaptism\ParamToValue\ParamToValueInterface|null
+   * @var \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface|null
    */
   private $paramToValue;
 
   /**
-   * @param \Donquixote\Adaptism\ParamToValue\ParamToValueInterface|null $paramToValue
+   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface|null $paramToValue
    */
   public function __construct(ParamToValueInterface $paramToValue = NULL) {
     $this->paramToValue = $paramToValue;
