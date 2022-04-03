@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
-use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
+use Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
 
 interface FactoryToAdapterInterface {
@@ -11,7 +11,7 @@ interface FactoryToAdapterInterface {
   /**
    * @param \Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface $factory
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface;
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?SpecificAdapterInterface;
 }

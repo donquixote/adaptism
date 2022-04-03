@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
-use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
+use Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
 use Donquixote\FactoryReflection\Util\FactoryUtil;
 use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
@@ -25,9 +25,9 @@ class FactoryToAdapter_FactoryReturningATA implements FactoryToAdapterInterface 
   /**
    * @param \Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface $factory
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface {
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?SpecificAdapterInterface {
 
     if (null === $returnTypeClass = $factory->getReturnTypeClass()) {
       return null;
@@ -35,7 +35,7 @@ class FactoryToAdapter_FactoryReturningATA implements FactoryToAdapterInterface 
 
     $returnTypeClassName = $returnTypeClass->getName();
 
-    if (!is_a($returnTypeClassName, ATAPartialInterface::class, true)) {
+    if (!is_a($returnTypeClassName, SpecificAdapterInterface::class, true)) {
       return null;
     }
 
@@ -43,7 +43,7 @@ class FactoryToAdapter_FactoryReturningATA implements FactoryToAdapterInterface 
       $factory,
       $this->paramToValue);
 
-    if (!$instance instanceof ATAPartialInterface) {
+    if (!$instance instanceof SpecificAdapterInterface) {
       return null;
     }
 

@@ -3,33 +3,34 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Util;
 
-use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
-
-/**
- * @see \Roave\BetterReflection\BetterReflection
- */
 class ReflectionUtil {
 
   /**
-   * @param \ReflectionParameter[] $params
-   * @param \Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface $paramToValue
+   * @param \ReflectionClassConstant|\ReflectionParameter|\ReflectionClass|\ReflectionProperty|\ReflectionFunctionAbstract $reflector
    *
-   * @return mixed[]|null
+   * @return string
    */
-  public static function paramsGetValues(array $params, ParamToValueInterface $paramToValue): ?array {
-
-    // Create a unique value to compare against.
-    $else = new \stdClass();
-
-    $argValues = [];
-    foreach ($params as $i => $param) {
-      if ($else === $argValue = $paramToValue->paramGetValue($param, $else)) {
-        return NULL;
-      }
-      $argValues[$i] = $argValue;
+  public static function reflectorDebugName(
+    \ReflectionClassConstant|\ReflectionParameter|\ReflectionClass|\ReflectionProperty|\ReflectionFunctionAbstract $reflector,
+  ): string {
+    $name = $reflector->getName();
+    if ($reflector instanceof \ReflectionParameter) {
+      return 'parameter $' . $name . ' of '
+        . self::reflectorDebugName($reflector->getDeclaringFunction());
     }
-
-    return $argValues;
+    if ($reflector instanceof \ReflectionFunctionAbstract) {
+      $name .= '()';
+    }
+    if ($reflector instanceof \ReflectionProperty) {
+      $name = '$' . $name;
+    }
+    if ($reflector instanceof \ReflectionProperty
+      || $reflector instanceof \ReflectionClassConstant
+      || $reflector instanceof \ReflectionMethod
+    ) {
+      $name = $reflector->getDeclaringClass()->getName() . '::' . $name;
+    }
+    return $name;
   }
 
 }

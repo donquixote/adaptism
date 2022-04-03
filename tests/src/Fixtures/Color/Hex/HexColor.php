@@ -3,35 +3,30 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Tests\Fixtures\Color\Hex;
 
-use Donquixote\Adaptism\Annotation\Adapter;
+use Donquixote\Adaptism\Attribute\Adaptee;
+use Donquixote\Adaptism\Attribute\Adapter;
 use Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColorInterface;
 
 class HexColor implements HexColorInterface {
 
   /**
-   * @var string
+   * @param string $hexCode
    */
-  private $hexCode;
+  public function __construct(
+    private string $hexCode,
+  ) {}
 
   /**
-   * @Adapter
-   *
    * @param \Donquixote\Adaptism\Tests\Fixtures\Color\Rgb\RgbColorInterface $rgbColor
    *
    * @return self
    */
-  public static function fromRgb(RgbColorInterface $rgbColor): self {
+  #[Adapter]
+  public static function fromRgb(#[Adaptee] RgbColorInterface $rgbColor): self {
     return new self(
       sprintf(
         '%02x%02x%02x',
         $rgbColor->red(), $rgbColor->green(), $rgbColor->blue()));
-  }
-
-  /**
-   * @param string $hexCode
-   */
-  public function __construct($hexCode) {
-    $this->hexCode = $hexCode;
   }
 
   /**

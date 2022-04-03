@@ -15,7 +15,7 @@ class FactoryVisitor_CollectAdapters implements FactoryVisitorInterface {
   private $factoryToAdapter;
 
   /**
-   * @var \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   * @var \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface[]
    */
   private $partials = [];
 
@@ -39,7 +39,7 @@ class FactoryVisitor_CollectAdapters implements FactoryVisitorInterface {
   }
 
   /**
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface[]
    */
   public function getPartials(): array {
     return $this->partials;

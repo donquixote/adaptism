@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\ClassFileToOccurences;
 
-use Donquixote\Adaptism\Annotation\Adapter;
-use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
+use Donquixote\Adaptism\Attribute\Adapter;
+use Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface;
 use Donquixote\Adaptism\Discovery\Occurence\Occurence;
 use Donquixote\Adaptism\Util\BetterReflectionUtil;
 use Roave\BetterReflection\BetterReflection;
@@ -42,7 +42,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
    *
    * @return \Donquixote\Adaptism\Discovery\Occurence\Occurence[]
    *
-   * @see \Donquixote\Adaptism\ATA\DefinitionToATA\DefinitionToATA
+   * @see \Donquixote\Adaptism\UniversalAdapter\DefinitionToATA\DefinitionToATA
    */
   public function classFileGetOccurences($class, $fileRealpath): array {
 
@@ -93,8 +93,8 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
    *
    * @return \Donquixote\Adaptism\Discovery\Occurence\Occurence|null
    *
-   * @see \Donquixote\Adaptism\ATA\DefinitionToATA\DefinitionToATA_AdapterClass
-   * @see \Donquixote\Adaptism\ATA\DefinitionToATA\DefinitionToATA_ATAClass
+   * @see \Donquixote\Adaptism\UniversalAdapter\DefinitionToATA\DefinitionToATA_AdapterClass
+   * @see \Donquixote\Adaptism\UniversalAdapter\DefinitionToATA\DefinitionToATA_ATAClass
    */
   private function classGetOccurence(ReflectionClass $reflClass, $pattern): ?Occurence {
 
@@ -117,7 +117,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
     /** @noinspection ExceptionsAnnotatingAndHandlingInspection */
     $constructor = $reflClass->getConstructor();
 
-    if ($reflClass->implementsInterface(ATAPartialInterface::class)) {
+    if ($reflClass->implementsInterface(SpecificAdapterInterface::class)) {
       return Occurence::fromClassName($reflClass->getName(), 'ata');
     }
 
@@ -182,7 +182,7 @@ class ClassFileToOccurences_BetterReflection implements ClassFileToOccurencesInt
   private function typeBuildFunctionOccurence(string $className, ReflectionMethod $reflMethod): ?Occurence {
 
     if ('object' !== $className
-      && is_a($className, ATAPartialInterface::class, true)
+      && is_a($className, SpecificAdapterInterface::class, true)
     ) {
       return Occurence::fromStaticMethod(
         $reflMethod->getDeclaringClass()->getName(),

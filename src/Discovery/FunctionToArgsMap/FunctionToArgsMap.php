@@ -3,12 +3,12 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\FunctionToArgsMap;
 
-use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_FreeArgs;
-use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_MoreArgs;
-use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_Simple;
-use Donquixote\Adaptism\ATA\ArgsMap\ArgsMap_SimpleWithATA;
-use Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface;
-use Donquixote\Adaptism\ATA\ATAInterface;
+use Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMap_FreeArgs;
+use Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMap_MoreArgs;
+use Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMap_Simple;
+use Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMap_SimpleWithATA;
+use Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMapInterface;
+use Donquixote\Adaptism\UniversalAdapter\UniversalAdapterInterface;
 use Donquixote\Adaptism\Exception\Exception_ATABuilder;
 use Donquixote\ReflectionKit\ParamToValue\ParamToValueInterface;
 
@@ -29,7 +29,7 @@ class FunctionToArgsMap implements FunctionToArgsMapInterface {
   /**
    * @param \ReflectionFunctionAbstract $function
    *
-   * @return \Donquixote\Adaptism\ATA\ArgsMap\ArgsMapInterface
+   * @return \Donquixote\Adaptism\UniversalAdapter\ArgsMap\ArgsMapInterface
    *
    * @throws \Donquixote\Adaptism\Exception\Exception_ATABuilder
    */
@@ -47,7 +47,7 @@ class FunctionToArgsMap implements FunctionToArgsMapInterface {
       return new ArgsMap_Simple();
     }
 
-    if (ATAInterface::class !== $class = $parameters[1]->getClass()->getName()) {
+    if (UniversalAdapterInterface::class !== $class = $parameters[1]->getClass()->getName()) {
       $argsMap = new ArgsMap_Simple();
     }
     else {

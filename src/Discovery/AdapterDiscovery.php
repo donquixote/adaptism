@@ -35,7 +35,7 @@ class AdapterDiscovery implements AdapterDiscoveryInterface {
   /**
    * @param \Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface $classFilesIA
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface[]
    */
   public function classFilesIAGetPartials(ClassFilesIAInterface $classFilesIA): array {
 

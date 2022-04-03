@@ -9,7 +9,7 @@ interface ClassFileToAdaptersInterface {
    * @param string $class
    * @param string $fileRealpath
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface[]
    */
   public function classFileGetPartials(string $class, string $fileRealpath): array;
 }

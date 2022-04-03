@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Discovery\FactoryToAdapter;
 
-use Donquixote\Adaptism\ATA\Partial\ATAPartial_ClassInstance;
-use Donquixote\Adaptism\ATA\Partial\ATAPartial_StaticMethod;
-use Donquixote\Adaptism\ATA\Partial\ATAPartialInterface;
+use Donquixote\Adaptism\SpecificAdapter\ATAPartial_ClassInstance;
+use Donquixote\Adaptism\SpecificAdapter\ATAPartial_StaticMethod;
+use Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface;
 use Donquixote\Adaptism\Discovery\FactoryToArgsMap\FactoryToArgsMap;
 use Donquixote\Adaptism\Discovery\FactoryToArgsMap\FactoryToArgsMapInterface;
 use Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface;
@@ -57,9 +57,9 @@ class FactoryToAdapter implements FactoryToAdapterInterface {
   /**
    * @param \Donquixote\FactoryReflection\Factory\ReflectionFactoryInterface $factory
    *
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface|null
+   * @return \Donquixote\Adaptism\SpecificAdapter\SpecificAdapterInterface|null
    */
-  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?ATAPartialInterface {
+  public function factoryGetPartial(ReflectionFactoryInterface $factory): ?SpecificAdapterInterface {
 
     $parameters = $factory->getParameters();
 

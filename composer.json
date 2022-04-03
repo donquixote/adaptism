@@ -2,7 +2,7 @@
   "name": "donquixote/adaptism",
   "type": "library",
   "description": "Library to map adapter classes.",
-  "homepage": "http://github.com/donquixote/adaptism",
+  "homepage": "https://github.com/donquixote/adaptism",
   "license": "MIT",
   "repositories": [
     {
@@ -38,16 +38,21 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "donquixote/annotation-parser": "*",
-    "donquixote/callback-reflection": "*",
-    "donquixote/factory-discovery": "*",
-    "donquixote/reflectionkit": "*",
-    "roave/better-reflection": "*"
+    "donquixote/class-discovery": "dev-master",
+    "psr/container": "2.0.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "vimeo/psalm": "^4.22"
   },
   "autoload": {
-    "psr-4": { "Donquixote\\Adaptism\\": "src/" }
+    "psr-4": {
+      "Donquixote\\Adaptism\\": "src/"
+    }
   },
   "autoload-dev": {
-    "psr-4": { "Donquixote\\Adaptism\\Tests\\": "tests/src/" }
+    "psr-4": {
+      "Donquixote\\Adaptism\\Tests\\": "tests/src/"
+    }
   }
 }

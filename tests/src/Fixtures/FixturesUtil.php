@@ -3,67 +3,63 @@ declare(strict_types=1);
 
 namespace Donquixote\Adaptism\Tests\Fixtures;
 
-use Donquixote\Adaptism\ATA\ATA_PartialsList;
-use Donquixote\Adaptism\ATA\ATAInterface;
-use Donquixote\Adaptism\ATA\PartialsList\PartialsList;
-use Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface;
-use Donquixote\Adaptism\DefinitionList\DefinitionList_ClassFilesIA;
-use Donquixote\Adaptism\DefinitionList\DefinitionListInterface;
+use Donquixote\Adaptism\AdapterDefinitionList\AdapterDefinitionList_Discovery;
+use Donquixote\Adaptism\AdapterDefinitionList\AdapterDefinitionListInterface;
+use Donquixote\Adaptism\AdapterMap\AdapterMap_DefinitionList;
+use Donquixote\Adaptism\AdapterMap\AdapterMapInterface;
 use Donquixote\Adaptism\Discovery\AdapterDiscovery;
-use Donquixote\Adaptism\Discovery\ClassFileToOccurences\ClassFileToOccurences_BetterReflection;
+use Donquixote\Adaptism\SpecificAdapter\SpecificAdapter_DispatchByType;
+use Donquixote\Adaptism\UniversalAdapter\UniversalAdapter;
+use Donquixote\Adaptism\UniversalAdapter\UniversalAdapterInterface;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIA_NamespaceDirectoryPsr4;
 use Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface;
-use Donquixote\ReflectionKit\ParamToValue\ParamToValue_Empty;
+use Donquixote\ClassDiscovery\ReflectionClassesIA\ReflectionClassesIA_ClassFilesIA;
+use Psr\Container\ContainerInterface;
 
 class FixturesUtil {
 
-  /**
-   * @return \Donquixote\Adaptism\ATA\ATAInterface
-   */
-  public static function getATA(): ATAInterface {
-    return new ATA_PartialsList(self::getPartialsList());
+  public static function getContainer(array $objects): ContainerInterface {
+    return new class($objects) implements ContainerInterface {
+      public function __construct(
+        private array $objects,
+      ) {}
+
+      public function get(string $id) {
+        return $this->objects[$id] ?? null;
+      }
+
+      public function has(string $id): bool {
+        return isset($this->objects[$id]);
+      }
+    };
   }
 
-  /**
-   * @return \Donquixote\Adaptism\ATA\PartialsList\PartialsListInterface
-   */
-  public static function getPartialsList(): PartialsListInterface {
+  public static function getUniversalAdapter(ContainerInterface $container = null): UniversalAdapterInterface {
+    return new UniversalAdapter(
+      new SpecificAdapter_DispatchByType(
+        self::getAdapterMap(
+          $container ?? self::getContainer([]),
+        ),
+      ),
+    );
+  }
 
-    $paramToValue = new ParamToValue_Empty();
-
-    return PartialsList::create(
+  public static function getAdapterMap(ContainerInterface $container): AdapterMapInterface {
+    return new AdapterMap_DefinitionList(
       self::getDefinitionList(),
-      $paramToValue);
+      $container,
+    );
   }
 
-  /**
-   * @return \Donquixote\Adaptism\DefinitionList\DefinitionListInterface
-   */
-  public static function getDefinitionList(): DefinitionListInterface {
-
-    $classFileToOccurences = ClassFileToOccurences_BetterReflection::create();
-
-    return new DefinitionList_ClassFilesIA(
-      self::getClassFilesIA(),
-      $classFileToOccurences);
+  public static function getDefinitionList(): AdapterDefinitionListInterface {
+    return new AdapterDefinitionList_Discovery(
+      new ReflectionClassesIA_ClassFilesIA(
+        self::getClassFilesIA(),
+      ),
+    );
   }
 
-  /**
-   * @return \Donquixote\Adaptism\ATA\Partial\ATAPartialInterface[]
-   */
-  public static function discoverPartials(): array {
-
-    $paramToValue = new ParamToValue_Empty();
-
-    return AdapterDiscovery::create($paramToValue)
-      ->classFilesIAGetPartials(self::getClassFilesIA());
-  }
-
-  /**
-   * @return \Donquixote\ClassDiscovery\ClassFilesIA\ClassFilesIAInterface
-   */
   public static function getClassFilesIA(): ClassFilesIAInterface {
-
     return ClassFilesIA_NamespaceDirectoryPsr4::create(
       __DIR__,
       __NAMESPACE__);
